@@ -1,10 +1,11 @@
 #!/bin/bash
-DOCKER_REGISTRY="example.com"
+# DOCKER_REGISTRY="example.com"
 
-docker_build () {
-printf "/n Starting docker build is in-progres.../n"
-docker build --pull --label -t $DOCKER_REGISTRY:  .
-}
+# docker_build () {
+# printf "/n Starting docker build is in-progres.../n"
+# docker build --pull --label -t $DOCKER_REGISTRY:  .
+# }
 
 
-docker_build
+# docker_build
+echo "building ..."
