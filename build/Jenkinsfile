@@ -5,3 +5,4 @@ pipeline {
 			sh returnStdout: true, script: './build/stages/one.sh'
 		}
     }
+}
