@@ -2,7 +2,9 @@ pipeline {
 	agent any
     stages {
         stage ('build') {
+            steps {
 			sh returnStdout: true, script: './build/stages/one.sh'
+            }
 		}
     }
 }
