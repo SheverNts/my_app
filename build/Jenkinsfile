@@ -5,6 +5,10 @@ pipeline {
             steps {
 			sh './build/stages/lint.sh'
             }
+        stage ('build') {
+            steps {
+			sh './build/stages/build.sh'
+            }
     }
 }
 }
