@@ -1,7 +1,7 @@
 pipeline {
+	agent any
     stages {
-        stage ("hello") {
-            echo "jgchgckhfkfjhfjfkyfkjyfyf"
-        }
+        stage ('build') {
+			sh returnStdout: true, script: './build/stages/one.sh'
+		}
     }
-}
